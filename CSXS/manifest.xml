@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionManifest Version="7.0"
+  ExtensionBundleId="com.aether.illustrator.linktoolkit"
+  ExtensionBundleVersion="0.3.4"
+  ExtensionBundleName="链接增强工具">
+  <ExtensionList>
+    <Extension Id="com.aether.illustrator.linktoolkit.panel" Version="0.3.4" />
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="ILST" Version="[28.0,99.9]" />
+    </HostList>
+    <LocaleList>
+      <Locale Code="All" />
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="11.0" />
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="com.aether.illustrator.linktoolkit.panel">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>./index.html</MainPath>
+          <ScriptPath>./jsx/host.jsx</ScriptPath>
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>链接增强工具</Menu>
+          <Geometry>
+            <Size>
+              <Width>420</Width>
+              <Height>720</Height>
+            </Size>
+            <MinSize>
+              <Width>200</Width>
+              <Height>200</Height>
+            </MinSize>
+            <MaxSize>
+              <Width>900</Width>
+              <Height>1200</Height>
+            </MaxSize>
+          </Geometry>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>
